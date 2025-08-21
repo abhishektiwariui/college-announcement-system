@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "collge-announcement-system": {
+    "college-announcement-system": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -69,10 +69,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "collge-announcement-system:build:production"
+              "buildTarget": "college-announcement-system:build:production"
             },
             "development": {
-              "buildTarget": "collge-announcement-system:build:development"
+              "buildTarget": "college-announcement-system:build:development"
             }
           },
           "defaultConfiguration": "development"
