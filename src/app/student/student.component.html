@@ -1,0 +1,20 @@
+<div class="student-wrapper">
+  <div class="student-wrapper__header">
+    <a class="student-wrapper__btn" (click)="returnToWelcome()"
+      >Return to welcome page</a
+    >
+    <h2>Student Announcements</h2>
+  </div>
+  <ul *ngIf="announcements.length > 0; else noData">
+    <ng-container *ngFor="let a of announcements">
+      <li>
+        <b>{{ a.title }}</b> - {{ a.timestamp | date : "short" }}
+        <p>{{ a.description }}</p>
+      </li>
+      <hr />
+    </ng-container>
+  </ul>
+  <ng-template #noData>
+    <p>No announcements yet.</p>
+  </ng-template>
+</div>

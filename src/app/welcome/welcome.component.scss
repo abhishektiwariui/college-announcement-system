@@ -1,0 +1,28 @@
+.welcome-wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.login-btn {
+  margin-right: 1rem;
+}
+
+.header {
+  align-self: center;
+}
+
+.logo {
+  height: 10rem;
+  width: 30rem;
+  display: flex;
+  place-self: center;
+}
+
+.footer {
+  display: flex;
+  place-self: center;
+}

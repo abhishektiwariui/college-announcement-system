@@ -1,0 +1,21 @@
+<div class="logout"><button (click)="logOut()">Logout</button></div>
+<div class="admin-wrapper">
+  <h2 class="header">Admin Dashboard</h2>
+  <input [(ngModel)]="title" placeholder="Title" />
+  <br />
+  <textarea class="description" [(ngModel)]="description" placeholder="Description"></textarea>
+  <br />
+  <button class="admin-wrapper__btn" (click)="addAnnouncement()">
+    Post Announcement
+  </button>
+  <ul>
+    <ng-container *ngFor="let a of announcements">
+      <li class="announcement">
+        <b>{{ a.title }}</b> - {{ a.timestamp | date : "short" }}
+        <p>{{ a.description }}</p>
+        <button (click)="deleteAnnouncement(a.id)">Delete</button>
+      </li>
+      <hr />
+    </ng-container>
+  </ul>
+</div>

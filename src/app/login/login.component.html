@@ -1,0 +1,19 @@
+<div class="login-wrapper">
+  <img
+    class="logo"
+    src="assets/images/logo.png"
+    alt="Ramchandra Chandravanshi Institute of Technology"
+  />
+  <div class="login-form">
+    <h2 class="login-wrapper__header">Admin Login</h2>
+    <input class="input" [(ngModel)]="email" placeholder="Email" />
+    <br />
+    <input class="input" type="password" [(ngModel)]="password" placeholder="Password" />
+    <br />
+    <button class="login-wrapper__btn" (click)="login()">Login</button>
+    <a class="login-wrapper__btn" (click)="returnToWelcome()"
+      >Return to welcome page</a
+    >
+    <p *ngIf="error" style="color: red">{{ error }}</p>
+  </div>
+</div>

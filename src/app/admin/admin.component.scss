@@ -1,0 +1,27 @@
+.logout {
+  display: flex;
+  justify-self: right;
+  padding-right: 1rem;
+}
+
+.admin-wrapper {
+  width: 60%;
+  margin: auto;
+
+  &__btn {
+    display: flex;
+    place-self: center;
+  }
+}
+
+.header {
+  place-self: center;
+}
+
+.announcement {
+    margin-bottom: 1rem;
+}
+
+.description {
+  height: 8rem;
+}
